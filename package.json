@@ -1,0 +1,32 @@
+{
+  "name": "cairo-ecs-hardhat",
+  "version": "1.0.0",
+  "description": "ECS written in Cairo",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "pretest": "hardhat starknet-compile --disable-hint-validation",
+    "devnet-test": "npm test -- --starknet-network devnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shramee/cairo-ecs-hardhat.git"
+  },
+  "keywords": [
+    "template",
+    "cairo"
+  ],
+  "author": "shramee <shramee.srivastav@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shramee/cairo-ecs-hardhat/issues"
+  },
+  "homepage": "https://github.com/shramee/cairo-ecs-hardhat#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "@shardlabs/starknet-hardhat-plugin": "^0.7.1",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "hardhat": "^2.12.4"
+  }
+}
